@@ -3,13 +3,7 @@
 import codecs
 
 stopwords = set(codecs.open('stopwords.txt', encoding='utf8').readlines())
-def tokenize_words(line):
-    withoutspaces = line.strip()
-    tokenized = line.split(' ')
-    outputwords = []
-    for word in tokenized:
-        if word != '' and word not in stopwords:
-            outputwords.append(word)
+
 
     return outputwords
 
